@@ -125,8 +125,8 @@ const Hero: React.FC = () => {
 
             <Reveal delay={400} direction="right">
                 <p className="text-xl text-[#e0e0e0] max-w-[550px] mb-12 border-l-4 border-neon-cyan pl-6 bg-gradient-to-r from-[rgba(0,243,255,0.05)] to-transparent py-2 mx-auto lg:mx-0">
-                    FULL STACK DEVELOPER | ML ENGINEER | DIGITAL ARCHITECT<br />
-                    Building scalable web systems and robust AI pipelines with AAA precision.
+                    FULL STACK DEVELOPER | ML ENGINEER <br />
+                    Building scalable web systems and robust AI pipelines.
                 </p>
             </Reveal>
 
@@ -140,9 +140,9 @@ const Hero: React.FC = () => {
                 </div>
                 <div className="text-center lg:text-left group cursor-none">
                     <h3 className="font-display text-4xl text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] group-hover:text-neon-green transition-colors">
-                    92<span className="text-neon-green group-hover:text-white">%</span>
+                    4 yrs<span className="text-neon-green group-hover:text-white">+</span>
                     </h3>
-                    <p className="font-ui text-text-muted uppercase text-sm tracking-widest font-semibold">Model Accuracy</p>
+                    <p className="font-ui text-text-muted uppercase text-sm tracking-widest font-semibold">Experience</p>
                 </div>
                 <div className="text-center lg:text-left group cursor-none">
                     <h3 className="font-display text-4xl text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] group-hover:text-neon-purple transition-colors">7.6</h3>
