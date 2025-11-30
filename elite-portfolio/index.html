@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aramati Tanush Reddy | Elite Dev Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Config (Keep CDN for simplicity based on your code) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              void: '#030305',
+              panel: 'rgba(15, 15, 20, 0.9)',
+              neon: {
+                cyan: '#00f3ff',
+                purple: '#bc13fe',
+                pink: '#ff0055',
+                green: '#0aff0a',
+                gold: '#ffd700',
+                red: '#ff2a2a',
+              },
+              text: {
+                main: '#ffffff',
+                muted: '#d1d5db',
+              }
+            },
+            fontFamily: {
+              display: ['Orbitron', 'sans-serif'],
+              ui: ['Rajdhani', 'sans-serif'],
+              body: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'float-slow': 'float 6s ease-in-out infinite',
+              'float-medium': 'float 4s ease-in-out infinite',
+              'float-fast': 'float 3s ease-in-out infinite',
+              'spin-slow': 'spin 15s linear infinite',
+              'spin-ultra-slow': 'spin 30s linear infinite',
+              'pulse-glow': 'pulseGlow 2s infinite ease-in-out',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              pulseGlow: {
+                '0%, 100%': { opacity: 1 },
+                '50%': { opacity: 0.5 },
+              },
+              gridMove: {
+                '0%': { transform: 'rotateX(60deg) translateY(0)' },
+                '100%': { transform: 'rotateX(60deg) translateY(40px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Paste the <style> content from your original code here */
+      body { background-color: #030305; overflow-x: hidden; }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #030305; }
+      ::-webkit-scrollbar-thumb { background: #00f3ff; border-radius: 4px; }
+      .clip-hud { clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px); }
+      .clip-chip { clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px); }
+      .perspective-1000 { perspective: 1000px; }
+      .perspective-2000 { perspective: 2000px; }
+      .preserve-3d { transform-style: preserve-3d; }
+      .backface-hidden { backface-visibility: hidden; }
+      .translate-z-10 { transform: translateZ(10px); }
+      .translate-z-20 { transform: translateZ(20px); }
+      .rotate-x-12 { transform: rotateX(12deg); }
+      .rotate-y-12 { transform: rotateY(12deg); }
+      .animate-grid { animation: gridMove 1s linear infinite; }
+      @keyframes glitch-1 {
+        0% { clip-path: inset(20% 0 80% 0); transform: translate(-2px, 1px); }
+        20% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -1px); }
+        100% { clip-path: inset(10% 0 50% 0); transform: translate(-2px, 2px); }
+      }
+      @keyframes glitch-2 {
+        0% { clip-path: inset(10% 0 60% 0); transform: translate(2px, -1px); }
+        100% { clip-path: inset(30% 0 20% 0); transform: translate(2px, 1px); }
+      }
+      .animate-glitch-1 { animation: glitch-1 2.5s infinite linear alternate-reverse; }
+      .animate-glitch-2 { animation: glitch-2 3s infinite linear alternate-reverse; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- THIS LINE IS CRITICAL FOR VITE: -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
