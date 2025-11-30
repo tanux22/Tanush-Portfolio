@@ -10,7 +10,7 @@ interface SectionHeaderProps {
 const SectionHeader: React.FC<SectionHeaderProps> = ({ number, title, highlight, highlightColor = 'text-neon-cyan' }) => {
   // Helper to convert text color class to background color class
   const bgClass = highlightColor.replace('text-', 'bg-');
-  const borderClass = highlightColor.replace('text-', 'border-');
+  // const borderClass = highlightColor.replace('text-', 'border-');
 
   return (
     <div className="relative mb-20 pt-10">
