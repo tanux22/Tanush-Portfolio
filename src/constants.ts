@@ -111,17 +111,17 @@ export const PROJECTS: Project[] = [
     category: 'GRAPH NEURAL NETWORKS',
     description: 'Bipartite graph model (News & Tweets) using GCN/GAT architectures on Politifact dataset. Features TF-IDF node embeddings and PyTorch Geometric implementation.',
     techStack: ['PyTorch Geometric', 'SpaCy', 'Scikit-learn', 'Python'],
-    icon: 'fas fa-network-wired',
+    icon: 'fab fa-github',
     image: 'https://placehold.co/600x350/050505/00f3ff?text=GNN+Model+Viz&font=orbitron'
   },
   {
     id: '2',
-    title: 'ViveTube',
+    title: 'VibeTube',
     category: 'STREAMING PLATFORM',
     description: 'A modern video streaming architecture replicating YouTube. Features real-time video playback, dynamic search functionality, and immersive channel pages using RapidAPI data streams.',
     techStack: ['React', 'Material UI', 'JavaScript', 'RapidAPI'],
-    icon: 'fab fa-youtube',
-    image: 'https://placehold.co/600x350/050505/ff0055?text=ViveTube+Stream&font=orbitron'
+    icon: 'fab fa-github',
+    image: 'https://placehold.co/600x350/050505/ff0055?text=VibeTube+Stream&font=orbitron'
   },
   {
     id: '3',
